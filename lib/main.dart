@@ -9,6 +9,7 @@ void main() async {
   runApp(const myApp());
 
   WidgetsFlutterBinding.ensureInitialized();
+  final dbHelper = DatabaseHelper.instance;
 }
 
 class myApp extends StatefulWidget {

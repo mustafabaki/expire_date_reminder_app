@@ -15,7 +15,9 @@ class DatabaseHelper {
 
   static final columnId = 'id';
   static final columnName = 'name';
-  static final columnDate = 'date';
+  static final columnDay = 'day';
+  static final columnMonth = 'month';
+  static final columnYear = 'year';
   static final columnPic = 'pic';
 
   // make this a singleton class
@@ -46,7 +48,9 @@ class DatabaseHelper {
           CREATE TABLE $table (
             $columnId INTEGER PRIMARY KEY AUTOINCREMENT,
             $columnName TEXT NOT NULL,
-            $columnDate TEXT NOT NULL,
+            $columnDay TEXT NOT NULL,
+            $columnMonth TEXT NOT NULL,
+            $columnYear TEXT NOT NULL,
             $columnPic TEXT
           )
           ''');
